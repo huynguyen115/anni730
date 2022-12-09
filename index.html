@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>730 Days Love</title>
+    <meta
+      name="description"
+      content="A simple content slider with depth-like zoom functionality"
+    />
+    <meta
+      name="keywords"
+      content="blueprint, template, slider, zoom, javascript, depth, 3d, css"
+    />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- Feather Icons -->
+    <link rel="stylesheet" type="text/css" href="fonts/feather/style.css" />
+    <!-- General demo styles & header -->
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <!-- Component styles -->
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/playmusic.js"></script>
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container">
+      <!-- Blueprint header -->
+      <header class="bp-header cf">
+        <audio controls autoplay style="margin-bottom: 50px">
+          <source src="images/50NamVeSau.mp3" type="audio/mpeg" />
+        </audio>
+        <span>Nhật kí 730 ngày yêu</span>
+      </header>
+      <!-- Grid -->
+      <section class="slider">
+        <div class="slide slide--current" data-content="content-1">
+          <div class="slide__mover">
+            <div class="zoomer flex-center">
+              <img
+                class="zoomer__image"
+                src="images/ipad.png"
+                alt="iPad Mini"
+              />
+              <div class="preview">
+                <img src="images/first-1.jpg" alt="iPad Mini app preview" />
+                <div class="zoomer__area zoomer__area--size-4"></div>
+              </div>
+            </div>
+          </div>
+          <h2 class="slide__title">
+            <span>Những ngày đầu tiên</span>Vì không có nhiều thời gian để chuẩn
+            bị nên anh làm cái này cho em xem như là món ăn tinh thần nhé. Yêu
+            em nhiềuuu
+          </h2>
+        </div>
+        <div class="slide" data-content="content-2">
+          <div class="slide__mover">
+            <div class="zoomer flex-center">
+              <img
+                class="zoomer__image"
+                src="images/macbook.png"
+                alt="MacBook"
+              />
+              <div class="preview">
+                <img src="images/second-1.jpg" alt="MacBook app preview" />
+                <div class="zoomer__area zoomer__area--size-3"></div>
+              </div>
+            </div>
+          </div>
+          <h2 class="slide__title">
+            <span>Từ khi quen em anh đã mơ anh đã quen với nỗi nhớ</span>
+          </h2>
+        </div>
+        <div class="slide" data-content="content-3">
+          <div class="slide__mover">
+            <div class="zoomer flex-center">
+              <img
+                class="zoomer__image"
+                src="images/ipad.png"
+                alt="iPad Mini"
+              />
+              <div class="preview">
+                <img src="images/third-1.jpg" alt="iPad Mini app preview" />
+                <div class="zoomer__area zoomer__area--size-4"></div>
+              </div>
+            </div>
+          </div>
+          <h2 class="slide__title"><span>Chuyến đi chơi đầu tiên</span></h2>
+        </div>
+        <div class="slide" data-content="content-4">
+          <div class="slide__mover">
+            <div class="zoomer flex-center">
+              <img
+                class="zoomer__image"
+                src="images/ipad.png"
+                alt="iPad Mini"
+              />
+              <div class="preview">
+                <img src="images/fourth-1.jpg" alt="iPad Mini app preview" />
+                <div class="zoomer__area zoomer__area--size-4"></div>
+              </div>
+            </div>
+          </div>
+          <h2 class="slide__title"><span>Tình yêu mùa Covid</span></h2>
+        </div>
+        <div class="slide" data-content="content-5">
+          <div class="slide__mover">
+            <div class="zoomer flex-center">
+              <img
+                class="zoomer__image"
+                src="images/apple-watch.png"
+                alt="Apple Watch"
+              />
+              <div class="preview rounded">
+                <img src="images/fifth-1.jpg" alt="Apple Watch app preview" />
+                <div class="zoomer__area zoomer__area--size-1"></div>
+              </div>
+            </div>
+          </div>
+          <h2 class="slide__title"><span>Sinh nhật cùng nhau</span></h2>
+        </div>
+        <div class="slide" data-content="content-6">
+          <div class="slide__mover">
+            <div class="zoomer flex-center">
+              <img
+                class="zoomer__image"
+                src="images/ipad.png"
+                alt="iPad Mini"
+              />
+              <div class="preview">
+                <img src="images/sixth-1.jpg" alt="iPad Mini app preview" />
+                <div class="zoomer__area zoomer__area--size-4"></div>
+              </div>
+            </div>
+          </div>
+          <h2 class="slide__title"><span>2022</span></h2>
+        </div>
+        <nav class="slider__nav">
+          <button class="button button--nav-prev">
+            <i class="icon icon--arrow-left"></i
+            ><span class="text-hidden">Previous product</span>
+          </button>
+          <button class="button button--zoom">
+            <i class="icon icon--zoom"></i
+            ><span class="text-hidden">View details</span>
+          </button>
+          <button class="button button--nav-next">
+            <i class="icon icon--arrow-right"></i
+            ><span class="text-hidden">Next product</span>
+          </button>
+        </nav>
+      </section>
+      <!-- /slider-->
+      <section class="content">
+        <div class="content__item" id="content-1">
+          <img
+            class="content__item-img rounded-right"
+            src="images/first-1-3.jpg"
+            alt="Apple Watch Content"
+          />
+          <p>Ngại quó</p>
+          <img
+            class="content__item-img rounded-right"
+            src="images/first-1-1.jpg"
+            alt="Apple Watch Content"
+          />
+          <p>Nhìn ở đâu dạ công chúa?</p>
+          <img
+            class="content__item-img rounded-right"
+            src="images/first-1-2.jpg"
+            alt="Apple Watch Content"
+          />
+          <p>
+            Đi hẹn hò về nhưng mà không chịu về liền đâu ^^ ngồi trên xe hong
+            cho ngta về :(( huhu
+          </p>
+        </div>
+        <div class="content__item" id="content-2">
+          <img
+            class="content__item-img rounded-right"
+            src="images/second-1-1.jpg"
+            alt="Apple Watch Content"
+          />
+          <p>ỰC ực</p>
+          <img
+            class="content__item-img rounded-right"
+            src="images/second-1-2.jpg"
+            alt="Apple Watch Content"
+          />
+          <p>Giáng sinh cùng em</p>
+          <img
+            class="content__item-img rounded-right"
+            src="images/second-1-3.jpg"
+            alt="Apple Watch Content"
+          />
+          <p>Nhìn đi đâu dạ công chúa?</p>
+          <img
+            class="content__item-img rounded-right"
+            src="images/second-1-4.jpg"
+            alt="Apple Watch Content"
+          />
+          <p>Quà em tặng nè</p>
+        </div>
+        <div class="content__item" id="content-3">
+          <img
+            class="content__item-img rounded-right"
+            src="images/third-1-1.jpg"
+            alt="MacBook Content"
+          />
+          <div class="content__item-inner">
+            <h2>Chuyến đi đầu tiên cùng nhau</h2>
+            <h3>Những lần đầu tiên</h3>
+            <p>
+              Đây là chuyến đi mang nhiều cảm xúc và là cột mốc đầu tiên của anh
+              và em. Đánh dấu một chặng đường sắp đến đầy cảm xúc và ý nghĩa!
+            </p>
+          </div>
+          <img
+            style="margin-bottom: 15px"
+            class="content__item-img rounded-right"
+            src="images/third-1-2.jpg"
+            alt="Apple Watch Content"
+          />
+          <img
+            class="content__item-img rounded-right"
+            src="images/third-1-3.jpg"
+            alt="Apple Watch Content"
+          />
+        </div>
+        <div class="content__item" id="content-4">
+          <img
+            class="content__item-img rounded-right"
+            src="images/fourth-1-1.jpg"
+            alt="iMac Content"
+          />
+          <div class="content__item-inner">
+            <h2>Lần đầu tiên yêu xa</h2>
+            <h3>Quá nhiều chuyện xảy ra huhu</h3>
+            <p>
+              Lần đầu tiên chúng ta yêu xa, cũng có lẽ là lần tình yêu chúng ta
+              bị thử thách nhiều nhất nhưng thật vui là chúng ta đã vượt qua một
+              cách thật ngoạn mục. Cảm ơn tình yêu đã luôn ở bên anh.
+            </p>
+          </div>
+          <img
+            class="content__item-img rounded-right"
+            src="images/fourth-1-2.jpg"
+            alt="iMac Content"
+          />
+        </div>
+        <div class="content__item" id="content-5">
+          <img
+            class="content__item-img rounded-right"
+            src="images/fifth-1-1.jpg"
+            alt="Apple Watch Content"
+          />
+          <div class="content__item-inner">
+            <h2>Cùng nhau đón sinh nhật</h2>
+            <p>
+              Thế là đã cùng nhau đón được 5 cái sinh nhật rồi, phát huy thêm
+              nhiều cái nữa nha hihi
+            </p>
+          </div>
+          <img
+            style="margin-bottom: 15px"
+            class="content__item-img rounded-right"
+            src="images/fifth-1-2.jpg"
+            alt="Apple Watch Content"
+          />
+          <img
+            style="margin-bottom: 15px"
+            class="content__item-img rounded-right"
+            src="images/fifth-1-3.jpg"
+            alt="Apple Watch Content"
+          />
+          <img
+            style="margin-bottom: 15px"
+            class="content__item-img rounded-right"
+            src="images/fifth-1-4.jpg"
+            alt="Apple Watch Content"
+          />
+          <img
+            class="content__item-img rounded-right"
+            src="images/fifth-1-5.jpg"
+            alt="Apple Watch Content"
+          />
+        </div>
+        <div class="content__item" id="content-6">
+          <img
+            class="content__item-img rounded-right"
+            src="images/sixth-1-1.jpg"
+            alt="Apple Watch Content"
+          />
+          <div class="content__item-inner">
+            <h2>Nhẫn gì vậy ta</h2>
+            <p>
+              Một năm thật nhiều thứ ý nghĩa với anh và em, quá nhiều cột mốc
+              mình cùng nhau làm được. Chúc cho những điều chúng ta mong ước sẽ
+              sớm thành sự thật.
+            </p>
+          </div>
+          <img
+            class="content__item-img rounded-right"
+            src="images/sixth-1-2.jpg"
+            alt="Apple Watch Content"
+          />
+          <p>Chuyến đi của nhiều thứ lần đầu ^^</p>
+          <img
+            class="content__item-img rounded-right"
+            src="images/sixth-1-3.jpg"
+            alt="Apple Watch Content"
+          />
+          <p>Cắm trại nào!</p>
+          <img
+            class="content__item-img rounded-right"
+            src="images/sixth-1-4.jpg"
+            alt="Apple Watch Content"
+          />
+          <p>Phố lên đèn là Chích Chòe lên đồ</p>
+          <img
+            class="content__item-img rounded-right"
+            src="images/sixth-1-5.jpg"
+            alt="Apple Watch Content"
+          />
+          <p>Giống chụp hình cưới quá chời :))</p>
+          <img
+            class="content__item-img rounded-right"
+            src="images/sixth-1-6.jpg"
+            alt="Apple Watch Content"
+          />
+          <div class="content__item-inner">
+            <p>Thế là chuyến đi cuối cùng trong năm đã đến ^^</p>
+          </div>
+        </div>
+        <button class="button button--close">
+          <i class="icon icon--circle-cross"></i
+          ><span class="text-hidden">Close content</span>
+        </button>
+      </section>
+    </div>
+    <script src="js/classie.js"></script>
+    <script src="js/dynamics.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
